@@ -1,0 +1,56 @@
+.wrapper2 {
+  width: 100%;
+  max-width: 500px;
+  margin: 100px auto 10px;
+  border-radius: 10px;
+  padding: 40px 30px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+  align-items: center;
+  gap: 20px;
+}
+.demoInput {
+  border: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  outline: 2px solid lightgray;
+  width: 100%;
+  max-width: 125px;
+  height: 32px;
+  font-family: sans-serif;
+}
+.buttonWrapper {
+  display: flex;
+}
+
+.demoBack {
+  margin-right: 200px;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  background-color: lightseagreen;
+  color: white;
+}
+.demoNext {
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  background-color: lightseagreen;
+  color: white;
+}
+
+.demoBack:hover {
+  background-color: #008080;
+}
+.demoNext:hover {
+  background-color: #008080;
+}
+.demoText {
+  color: lightseagreen;
+}

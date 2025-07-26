@@ -1,8 +1,38 @@
 .wrapper {
   width: 100%;
-  max-width: 540px;
+  max-width: 600px;
   margin: 100px auto 10px;
-  background: lightgray;
   border-radius: 10px;
-  padding: 40px 30px 70px;
+  padding: 40px 30px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 400px;
+}
+
+.loginHeader {
+  color: lightseagreen;
+}
+
+.larger-text {
+  font-family: sans-serif;
+  font-size: 50px;
+}
+.wlcText {
+  color: gray;
+}
+.wlcBtn {
+  align-self: center;
+  margin-top: 100px;
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  background-color: lightseagreen;
+  color: white;
+}
+.wlcBtn:hover {
+  background-color: #008080;
 }
