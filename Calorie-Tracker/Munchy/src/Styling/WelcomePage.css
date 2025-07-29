@@ -1,5 +1,6 @@
 .wrapper {
   width: 100%;
+<<<<<<< HEAD
   max-width: 600px;
   margin: 100px auto 10px;
   border-radius: 10px;
@@ -35,4 +36,11 @@
 }
 .wlcBtn:hover {
   background-color: #008080;
+=======
+  max-width: 540px;
+  margin: 100px auto 10px;
+  background: lightgray;
+  border-radius: 10px;
+  padding: 40px 30px 70px;
+>>>>>>> origin/main
 }
