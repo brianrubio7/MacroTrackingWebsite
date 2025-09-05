@@ -1,16 +1,33 @@
 import "../../Styling/DemographicQuestion.css";
 
-const DemographicQuestion = () => {
+const DemographicQuestion = ({ onNext, onBack }) => {
   return (
     <div className="wrapper2">
-      <h2 className="demoText">What is your gender?</h2>
-      <p>Male Female</p>
+      <h2 className="demoText">
+        Please select which sex we should use to calculate your calorie needs.
+      </h2>
+      <form>
+        <label>
+          <input type="radio" name="gender" value="male"></input>
+          <span class="circle">Male</span>
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female"></input>
+          <span class="circle">Female</span>
+        </label>
+      </form>
       <h2 className="demoText">When were you born?</h2>
-      <input className="demoInput" placeholder="MM/DD/YYYY"></input>
+      <form>
+        <input placeholder="MM/DD/YYYY" class="demoInput"></input>
+      </form>
 
       <div className="buttonWrapper">
-        <button className="demoBack">Back</button>
-        <button className="demoNext">Next</button>
+        <button className="demoBack" onClick={onBack}>
+          Back
+        </button>
+        <button className="demoNext" onClick={onNext}>
+          Next
+        </button>
       </div>
     </div>
   );

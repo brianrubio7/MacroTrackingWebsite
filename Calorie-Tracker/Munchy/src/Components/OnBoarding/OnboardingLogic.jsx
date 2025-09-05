@@ -21,7 +21,9 @@ const OnboardingLogic = () => {
   return (
     <div>
       {currentStep === 0 && <WelcomePage onNext={handleNext} />}
-      {currentStep === 1 && <DemogrpahicQuestion onNext={handleNext} />}
+      {currentStep === 1 && (
+        <DemogrpahicQuestion onNext={handleNext} onBack={handleBack} />
+      )}
     </div>
   );
 };

@@ -5,12 +5,13 @@
   border-radius: 10px;
   padding: 40px 30px 30px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-
+  text-align: left;
   display: flex;
   flex-direction: column;
   min-height: 400px;
   align-items: center;
   gap: 20px;
+  position: aboslute;
 }
 .demoInput {
   border: none;
@@ -34,6 +35,8 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   background-color: lightseagreen;
   color: white;
+  position: relative;
+  top: 50px;
 }
 .demoNext {
   border-radius: 10px;
@@ -43,6 +46,8 @@
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
   background-color: lightseagreen;
   color: white;
+  position: relative;
+  top: 50px;
 }
 
 .demoBack:hover {
@@ -53,4 +58,9 @@
 }
 .demoText {
   color: lightseagreen;
+}
+
+.circle {
+  padding-left: 5px;
+  padding-right: 10px;
 }
