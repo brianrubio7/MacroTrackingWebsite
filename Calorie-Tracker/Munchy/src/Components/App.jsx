@@ -1,5 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
 import LoginPage from "./OnBoarding/LoginPage";
 import WelcomePage from "./OnBoarding/WelcomePage";
 import Header from "./Header";
@@ -9,14 +8,6 @@ const App = () => {
     <div>
       <Header />
       <OnboardingLogic />
-=======
-import LoginPage from "./LoginPage";
-
-const App = () => {
-  return (
-    <div>
-      <LoginPage />
->>>>>>> origin/main
     </div>
   );
 };
