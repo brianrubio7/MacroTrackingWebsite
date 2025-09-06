@@ -1,5 +1,6 @@
 import WelcomePage from "./WelcomePage";
 import DemogrpahicQuestion from "./DemographicQuestion";
+import BaseLineActivity from "./BaseLineActivity";
 import React, { useState } from "react";
 
 const OnboardingLogic = () => {
@@ -23,6 +24,9 @@ const OnboardingLogic = () => {
       {currentStep === 0 && <WelcomePage onNext={handleNext} />}
       {currentStep === 1 && (
         <DemogrpahicQuestion onNext={handleNext} onBack={handleBack} />
+      )}
+      {currentStep === 2 && (
+        <BaseLineActivity onNext={handleNext} onBack={handleBack} />
       )}
     </div>
   );

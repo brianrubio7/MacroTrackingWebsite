@@ -11,7 +11,6 @@
   min-height: 400px;
   align-items: center;
   gap: 20px;
-  position: aboslute;
 }
 .demoInput {
   border: none;

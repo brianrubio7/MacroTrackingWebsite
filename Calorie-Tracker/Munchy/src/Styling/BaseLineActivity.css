@@ -1,0 +1,45 @@
+.wrapper3 {
+  width: 100%;
+  max-width: 500px;
+  margin: 100px auto 10px;
+  border-radius: 10px;
+  padding: 40px 30px 30px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  align-items: center;
+  gap: 20px;
+}
+
+.boxSelection {
+  outline: 2px solid lightgray;
+  max-width: 400px;
+  width: 100%;
+  cursor: pointer;
+}
+.boxSelection:hover {
+  background-color: floralwhite;
+}
+p {
+}
+
+h2 {
+  color: lightseagreen;
+}
+
+h4 {
+  color: lightseagreen;
+}
+
+.demoNext,
+.demoBack {
+  border-radius: 10px;
+  padding: 10px 20px 10px 20px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  background-color: lightseagreen;
+  color: white;
+}
