@@ -23,14 +23,13 @@
   background-color: floralwhite;
 }
 
-h2 {
-  color: lightseagreen;
-}
-
+h2,
 h4 {
   color: lightseagreen;
 }
-
+p {
+  color: gray;
+}
 .demoNext,
 .demoBack {
   border-radius: 10px;
