@@ -1,6 +1,7 @@
 import WelcomePage from "./WelcomePage";
-import DemogrpahicQuestion from "./DemographicQuestion";
+import DemographicQuestion from "./DemographicQuestion";
 import BaseLineActivity from "./BaseLineActivity";
+import WeightForm from "./WeightForm";
 import React, { useState } from "react";
 
 const OnboardingLogic = () => {
@@ -23,10 +24,13 @@ const OnboardingLogic = () => {
     <div>
       {currentStep === 0 && <WelcomePage onNext={handleNext} />}
       {currentStep === 1 && (
-        <DemogrpahicQuestion onNext={handleNext} onBack={handleBack} />
+        <DemographicQuestion onNext={handleNext} onBack={handleBack} />
       )}
       {currentStep === 2 && (
         <BaseLineActivity onNext={handleNext} onBack={handleBack} />
+      )}
+      {currentStep === 3 && (
+        <WeightForm onNext={handleNext} onBack={handleBack} />
       )}
     </div>
   );

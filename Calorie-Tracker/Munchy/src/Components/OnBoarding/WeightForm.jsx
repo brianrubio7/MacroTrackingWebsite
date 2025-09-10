@@ -1,11 +1,11 @@
-import "../../Styling/WeightFrom.css";
+import "../../Styling/WeightForm.css";
 
-const WeightForm = () => {
+const WeightForm = ({ onNext, onBack }) => {
   return (
     <>
       <div className="wrapper4">
         <h4>How tall are you?</h4>
-        <input></input>
+        <input type="number" placeholder="Weight (lbs)"></input>
       </div>
     </>
   );
