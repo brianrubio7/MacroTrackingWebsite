@@ -2,6 +2,7 @@ import WelcomePage from "./WelcomePage";
 import DemographicQuestion from "./DemographicQuestion";
 import BaseLineActivity from "./BaseLineActivity";
 import WeightForm from "./WeightForm";
+import UserCreation from "./UserCreation";
 import React, { useState } from "react";
 
 const OnboardingLogic = () => {
@@ -31,6 +32,9 @@ const OnboardingLogic = () => {
       )}
       {currentStep === 3 && (
         <WeightForm onNext={handleNext} onBack={handleBack} />
+      )}
+      {currentStep === 4 && (
+        <UserCreation onNext={handleNext} onBack={handleBack} />
       )}
     </div>
   );
