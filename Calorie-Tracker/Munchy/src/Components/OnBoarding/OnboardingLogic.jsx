@@ -7,10 +7,21 @@ import React, { useState } from "react";
 
 const OnboardingLogic = () => {
   const [currentStep, setCurrentStep] = useState(0);
+  const [userData, setUserData] = useState({
+    sex: "",
+    dateOfBirth: "",
+    activityLevel: "",
+    heightInFeet: "",
+    heightInInches: "",
+    weight: "",
+    goalWeight: "",
+  });
 
   const totalSteps = 5;
 
-  const handleNext = () => {
+  const handleNext = (newData) => {
+    setUserData((prev) => ({ ...prev, ...newData }));
+
     if (currentStep < totalSteps - 1) {
       setCurrentStep(currentStep + 1);
     }
